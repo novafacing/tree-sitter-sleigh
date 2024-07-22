@@ -1,0 +1,16 @@
+[package]
+name = "tree-sitter-sleigh"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rust-sitter = "0.4.2"
+malachite = { version = "0.4.14", features = ["serde"] }
+regex = "1.10.5"
+typed-builder = "0.19.1"
+
+[build-dependencies]
+rust-sitter-tool = "0.4.2"
+malachite = { version = "0.4.14", features = ["serde"] }
+regex = "1.10.5"
+typed-builder = "0.19.1"
