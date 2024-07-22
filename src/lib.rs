@@ -3908,7 +3908,8 @@ mod test {
     #[test]
     fn test_x86_64() {
         const x86_64: &str = include_str!("../Processors/x86/data/languages/x86-64.sla");
-        parse(x86_64).expect("Failed to parse x86-64 sla");
+        let parsed = parse(x86_64).expect("Failed to parse x86-64 sla");
+        println!("{:#?}", parsed);
     }
     #[test]
     fn test_x86() {
